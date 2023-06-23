@@ -1,0 +1,423 @@
+{
+	"info": {
+		"_postman_id": "5b30d023-6589-4a52-bcb1-d45734b7c758",
+		"name": "Customer-product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18124754"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\":{\r\n        \"firstName\":\"Mikle\",\r\n        \"lastName\":\"Nikola\",\r\n        \"email\":\"mik@gmail.com\",\r\n        \"age\":32,\r\n        \"gender\":\"male\",\r\n        \"products\":[\r\n            {\r\n                \"productName\":\"Mobile Phone\",\r\n                \"productModel\":\"Asus\",\r\n                \"color\":\"Black\",\r\n                \"quantity\":1,\r\n                \"price\":250\r\n            },\r\n            {\r\n                \"productName\":\"Laptop\",\r\n                \"productModel\":\"Asus\",\r\n                \"color\":\"Grey\",\r\n                \"quantity\":2,\r\n                \"price\":1100\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\":{\r\n        \"firstName\":\"Alex\",\r\n        \"lastName\":\"Petrov\",\r\n        \"email\":\"alex@gmail.com\",\r\n        \"age\":18,\r\n        \"gender\":\"male\",\r\n        \"products\":[\r\n            {\r\n                \"productName\":\"Mobile Phone\",\r\n                \"productModel\":\"Nokia\",\r\n                \"color\":\"Silver\",\r\n                \"quantity\":1,\r\n                \"price\":320\r\n            },\r\n            {\r\n                \"productName\":\"TV\",\r\n                \"productModel\":\"Samsung\",\r\n                \"color\":\"Black\",\r\n                \"quantity\":1,\r\n                \"price\":1200\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\":{\r\n        \"firstName\":\"Olga\",\r\n        \"lastName\":\"Niforova\",\r\n        \"email\":\"olga@gmail.com\",\r\n        \"age\":27,\r\n        \"gender\":\"female\",\r\n        \"products\":[\r\n            {\r\n                \"productName\":\"Watch\",\r\n                \"productModel\":\"Apple\",\r\n                \"color\":\"Silver\",\r\n                \"quantity\":1,\r\n                \"price\":400\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\":{\r\n        \"firstName\":\"Vanya\",\r\n        \"lastName\":\"Odinets\",\r\n        \"email\":\"ivan@gmail.com\",\r\n        \"age\":33,\r\n        \"gender\":\"male\",\r\n        \"products\":[\r\n            {\r\n                \"productName\":\"Mobile Phone\",\r\n                \"productModel\":\"Apple\",\r\n                \"color\":\"Grey\",\r\n                \"quantity\":1,\r\n                \"price\":1000\r\n            },\r\n            {\r\n                \"productName\":\"Car\",\r\n                \"productModel\":\"Nissan\",\r\n                \"color\":\"Silver\",\r\n                \"quantity\":1,\r\n                \"price\":11000\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer\":{\r\n        \"firstName\":\"Vanya\",\r\n        \"lastName\":\"Odinets\",\r\n        \"email\":\"ivan7@gmail.com\",\r\n        \"age\":33,\r\n        \"gender\":\"male\",\r\n        \"products\":[\r\n            {\r\n                \"productName\":\"Mobile Phone\",\r\n                \"productModel\":\"Apple\",\r\n                \"color\":\"Grey\",\r\n                \"quantity\":1,\r\n                \"price\":1000\r\n            },\r\n            {\r\n                \"productName\":\"Car\",\r\n                \"productModel\":\"Nissan\",\r\n                \"color\":\"Silver\",\r\n                \"quantity\":1,\r\n                \"price\":11000\r\n            }\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/customers/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customers/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/customers/getInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/customers/getInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customers",
+						"getInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"productName\":\"TV Set\",\r\n                \"productModel\":\"LG\",\r\n                \"color\":\"Black\",\r\n                \"quantity\":1,\r\n                \"price\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Mobile Phone\",\r\n    \"productModel\":\"LG\",\r\n    \"color\":\"Black\",\r\n    \"quantity\":1,\r\n    \"price\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/products/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Mobile Phone\",\r\n    \"productModel\":\"LG\",\r\n    \"color\":\"Black\",\r\n    \"quantity\":1,\r\n    \"price\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/products/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/products/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Mobile Phone\",\r\n    \"productModel\":\"LG\",\r\n    \"color\":\"Black\",\r\n    \"quantity\":1,\r\n    \"price\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/products/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
